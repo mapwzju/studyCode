@@ -18,12 +18,19 @@ public class Restaurant implements Runnable {
 
     @Override
     public void run() {
+        try {
+            //模拟等待
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         synchronized (seat) {
             System.out.println("Restaurant:有空位，通知客人来就餐...");
-            seat.notify();//等待叫号
+            seat.notify();//通知到号
             System.out.println("Restaurant:完成通知");
 
         }
 
     }
+
 }

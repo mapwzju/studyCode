@@ -6,6 +6,9 @@ package com.zju.javastudy.waitnotify.demo1;
  * @Decription: 饿着的人，去餐馆取号，等待者
  */
 public class HungryPeople implements Runnable {
+    /**
+     * 座位
+     */
     private Object seat;
 
     public HungryPeople(Object seat) {
