@@ -4,7 +4,6 @@ import com.zju.javastudy.waitnotify.demo1.HungryPeople;
 import com.zju.javastudy.waitnotify.demo1.Restaurant;
 import org.junit.Test;
 
-import static sun.jvm.hotspot.runtime.PerfMemory.start;
 
 /**
  * @author Arthur
